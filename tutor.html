@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Become a tutor | SteadyState</title>
+  <meta name="description" content="Lecturers, students and alumni: apply to tutor chemical engineering with SteadyState.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='6' fill='%231E4A33'/%3E%3Cpath d='M5 25 C9 11 14 8 26 8' fill='none' stroke='%23EEF5E6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="SteadyState home">
+        <svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <path d="M3 3 V27 H27" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M4 7 H27" fill="none" stroke="var(--pen)" stroke-width="1.5" stroke-dasharray="2 3"/>
+          <path d="M4 26 C8 12 14 8 27 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>SteadyState</span>
+      </a>
+      <a class="btn btn-ghost btn-small" href="index.html">Back to home</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section register tutor-page">
+      <div class="wrap register-grid">
+        <div class="register-copy">
+          <h1>Become a tutor</h1>
+          <p>Lecturers, students and alumni who know chemical engineering well can teach small groups with SteadyState and get paid for every session.</p>
+
+          <h2 class="steps-heading">What happens next</h2>
+          <ol class="steps">
+            <li>We check your details and qualification document.</li>
+            <li>We invite you to a short trial lesson online.</li>
+            <li>You choose the courses and times you can teach.</li>
+          </ol>
+          <p>We reply by email within 3 working days.</p>
+        </div>
+
+        <!-- Works with Netlify Forms (free file uploads) or a paid Formspree plan. See config.js and README.md. -->
+        <form class="form" id="tutor-form" name="tutor-application" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="_gotcha">
+          <input type="hidden" name="form-name" value="tutor-application">
+          <input type="hidden" name="_subject" value="New SteadyState tutor application">
+          <!-- Spam trap: real people never fill this in. -->
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="t-name">Full name</label>
+            <input id="t-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="t-email">Email</label>
+            <input id="t-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field field-wide">
+            <label for="t-phone">WhatsApp number</label>
+            <input id="t-phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+
+          <fieldset class="choice-group field-wide">
+            <legend>Position</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="position" value="Lecturer" required> Lecturer</label>
+              <label class="choice"><input type="radio" name="position" value="Student"> Student</label>
+              <label class="choice"><input type="radio" name="position" value="Alumni"> Alumni</label>
+            </div>
+          </fieldset>
+
+          <div class="field field-wide">
+            <label for="t-qualification">Qualification</label>
+            <input id="t-qualification" name="qualification" type="text" placeholder="For example, BEng (Hons) Chemical Engineering, CGPA 3.50" required>
+          </div>
+
+          <div class="field field-wide">
+            <label for="t-courses">Courses you can teach <span class="optional">(optional)</span></label>
+            <input id="t-courses" name="courses" type="text" placeholder="For example, CHE463 Heat transfer, CHE544 Separation processes">
+          </div>
+
+          <div class="field field-wide">
+            <label for="qualification-file">Qualification document</label>
+            <input id="qualification-file" name="qualification_file" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" aria-describedby="file-hint file-info" required>
+            <p class="hint" id="file-hint">Degree certificate, or your latest transcript if you're a student. PDF, JPG or PNG, up to <span data-max-mb>5</span> MB.</p>
+            <p class="hint file-info" id="file-info" aria-live="polite"></p>
+          </div>
+
+          <div class="field-wide consent">
+            <input id="t-consent" name="consent" type="checkbox" value="yes" required>
+            <label for="t-consent">I confirm these details are true and the document is mine. SteadyState may keep them to review my application, as described in the <a href="privacy.html">privacy policy</a>.</label>
+          </div>
+
+          <div class="form-actions field-wide">
+            <button class="btn" type="submit">Send application</button>
+            <p class="form-status" id="tutor-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-base">
+      <p>&copy; <span id="year">2026</span> SteadyState</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="tutor.js"></script>
+</body>
+</html>

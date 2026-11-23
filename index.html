@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SteadyState | Private tutoring for chemical engineering students</title>
+  <meta name="description" content="Small-group private tutoring for chemical engineering students. Classes of 10 or fewer, tutors who passed the same courses, and free questions between sessions.">
+
+  <!-- Social share preview. Replace the URL once your domain is live. -->
+  <meta property="og:title" content="SteadyState | Chemical engineering tutoring">
+  <meta property="og:description" content="Small-group tutoring for thermo, fluids, mass transfer, reaction engineering and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourdomain.com/">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='6' fill='%231E4A33'/%3E%3Cpath d='M5 25 C9 11 14 8 26 8' fill='none' stroke='%23EEF5E6' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- MONETIZE: paste your Google AdSense <script> here after your site is approved. See README.md, section 5. -->
+  <!-- ANALYTICS: paste your Google Analytics or Plausible snippet here. -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="SteadyState home">
+        <svg class="brand-mark" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+          <path d="M3 3 V27 H27" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M4 7 H27" fill="none" stroke="var(--pen)" stroke-width="1.5" stroke-dasharray="2 3"/>
+          <path d="M4 26 C8 12 14 8 27 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>SteadyState</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#packages">Packages</a>
+        <a href="#packs">Study packs</a>
+        <a href="#reviews">Reviews</a>
+        <a href="tutor.html">Become a tutor</a>
+        <a class="btn btn-small" href="#register">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Private tutoring for chemical engineering students.</h1>
+          <p class="lede">Small classes of up to 10, tutors who have already passed the courses you're taking, and free questions between sessions. Pick your group and your subject. We'll set the time with you.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#register">Register now</a>
+            <a class="btn btn-ghost" href="#packages">See packages</a>
+          </div>
+          <ul class="hero-facts">
+            <li>2-hour sessions</li>
+            <li>Online or in person</li>
+            <li>Notes and practice sets included</li>
+          </ul>
+        </div>
+
+        <figure class="pfd">
+          <svg viewBox="0 0 600 460" role="img" aria-labelledby="pfd-title pfd-desc">
+            <title id="pfd-title">How a SteadyState session works</title>
+            <desc id="pfd-desc">A process flow diagram. Stream 1, you in week 10, feeds into R-101, a two-hour tutoring session. Stream 2 leaves exam-ready. Stream 3 recycles free questions between sessions back into the next session.</desc>
+
+            <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <!-- Stream 1: feed -->
+              <path class="draw d1" pathLength="1" d="M12 210 H166"/>
+              <!-- R-101: vessel, agitator -->
+              <path class="draw d2" pathLength="1" d="M170 150 Q170 105 245 105 Q320 105 320 150 V290 Q320 335 245 335 Q170 335 170 290 Z"/>
+              <path class="draw d2" pathLength="1" d="M245 62 V268"/>
+              <path class="draw d2" pathLength="1" d="M213 268 H277"/>
+              <path class="late l2" d="M213 260 V276 M277 260 V276"/>
+              <rect class="late l2" x="226" y="38" width="38" height="24" rx="3"/>
+              <!-- Stream 2: product -->
+              <path class="draw d3" pathLength="1" d="M322 210 H450"/>
+              <path class="draw d3" pathLength="1" d="M454 186 H566 L590 210 L566 234 H454 Z"/>
+              <!-- Stream 3: recycle -->
+              <path class="draw d4" pathLength="1" d="M398 210 V412 H140 V290 H166"/>
+              <path class="late l4 valve" d="M286 402 L314 422 V402 L286 422 Z"/>
+            </g>
+
+            <!-- Arrowheads and junction -->
+            <g fill="currentColor">
+              <path class="late l1" d="M154 202 L168 210 L154 218 Z"/>
+              <path class="late l3" d="M438 202 L452 210 L438 218 Z"/>
+              <circle class="late l4" cx="398" cy="210" r="5"/>
+              <path class="late l4" d="M154 282 L168 290 L154 298 Z"/>
+            </g>
+
+            <!-- Stream number tags -->
+            <g class="tag late l1" transform="translate(70 210)"><path d="M0 -12 L12 0 L0 12 L-12 0 Z"/><text y="4.5">1</text></g>
+            <g class="tag late l3" transform="translate(422 210)"><path d="M0 -12 L12 0 L0 12 L-12 0 Z"/><text y="4.5">2</text></g>
+            <g class="tag late l4" transform="translate(140 350)"><path d="M0 -12 L12 0 L0 12 L-12 0 Z"/><text y="4.5">3</text></g>
+
+            <!-- Labels -->
+            <text class="label late l1" x="12" y="190">You, week 10</text>
+            <text class="note late l1" x="16" y="248" transform="rotate(-3 16 248)">stuck on thermo</text>
+            <text class="motor late l2" x="245" y="55">M</text>
+            <text class="label strong center late l2" x="245" y="364">R-101</text>
+            <text class="label center late l2" x="245" y="386">Tutoring session, 2 h</text>
+            <text class="label strong center late l3" x="517" y="216">Exam-ready</text>
+            <text class="note late l4" x="150" y="448" transform="rotate(-2 150 448)">free Q&amp;A between sessions</text>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT / WHY US -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2>Why students pick SteadyState</h2>
+        <p class="section-lede">Chemical engineering courses build on each other. Miss one idea in week 3 and week 9 stops making sense. We close those gaps in small groups, at your pace.</p>
+
+        <div class="reasons">
+          <article class="reason">
+            <h3>Classes of 10 or fewer</h3>
+            <p>Small enough that your tutor knows where each person is stuck. Bring your own study group or join one.</p>
+          </article>
+          <article class="reason">
+            <h3>Tutors who sat the same exams</h3>
+            <p>Senior students and graduates who passed these courses and can explain them in plain language.</p>
+          </article>
+          <article class="reason">
+            <h3>Free questions between sessions</h3>
+            <p>Send a photo of the problem you're stuck on. A tutor replies with a hint or the next step, at no extra cost.</p>
+          </article>
+          <article class="reason">
+            <h3>Notes that match your syllabus</h3>
+            <p>Summary notes and practice question sets, updated every semester and included with every package.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Courses we tutor</h2>
+            <p class="section-lede">From first-year calculus to plant design. Search by course code or topic. Don't see yours? Message us. We can usually find a tutor.</p>
+          </div>
+          <div class="search">
+            <label for="course-search">Search courses</label>
+            <input type="search" id="course-search" placeholder="Try CHE545 or distillation" autocomplete="off">
+          </div>
+        </div>
+
+        <!-- Course list. Each <li> is searchable by its code, name, description and data-keywords.
+             The registration form's course suggestions are built from this list by script.js. -->
+        <div class="course-groups" id="course-list">
+
+          <section class="course-group" aria-labelledby="cg-year1">
+            <h3 class="course-group-title" id="cg-year1">Year 1</h3>
+            <ul class="course-list">
+              <li data-keywords="intro units dimensions process variables unit operations">
+                <h4><span class="code">CPE420</span> Introduction to chemical engineering</h4>
+                <p>Units and dimensions, process variables, unit operations and what chemical engineers do.</p>
+              </li>
+              <li data-keywords="fluids bernoulli pipe friction pump reynolds statics">
+                <h4><span class="code">CHE413</span> Fluid mechanics for chemical engineering</h4>
+                <p>Fluid statics, Bernoulli, pipe flow and friction losses, pumps.</p>
+              </li>
+              <li data-keywords="chemistry stoichiometry equilibrium kinetics industrial">
+                <h4><span class="code">CHE434</span> Process chemistry</h4>
+                <p>Reactions, stoichiometry, equilibrium and kinetics used in industrial processes.</p>
+              </li>
+              <li data-keywords="drawing orthographic isometric section cad autocad">
+                <h4><span class="code">CPE414</span> Engineering drawing</h4>
+                <p>Orthographic and isometric views, sectioning, dimensioning, CAD.</p>
+              </li>
+              <li data-keywords="math calculus limits differentiation integration">
+                <h4><span class="code">MAT435</span> Calculus for engineers</h4>
+                <p>Limits, differentiation, integration and their applications.</p>
+              </li>
+              <li data-keywords="math calculus partial derivatives multiple integrals series ode differential equations">
+                <h4><span class="code">MAT455</span> Further calculus for engineers</h4>
+                <p>Partial derivatives, multiple integrals, series, differential equations.</p>
+              </li>
+              <li data-keywords="organic chemistry mechanisms functional groups stereochemistry">
+                <h4><span class="code">CHE430</span> Organic chemistry</h4>
+                <p>Functional groups, reaction mechanisms, stereochemistry.</p>
+              </li>
+              <li data-keywords="thermo thermodynamics first law second law entropy steam tables cycle">
+                <h4><span class="code">CHE433</span> Thermodynamics</h4>
+                <p>First and second laws, properties of pure substances, steam tables, power and refrigeration cycles.</p>
+              </li>
+              <li data-keywords="cpp mass balance material balance recycle bypass purge">
+                <h4><span class="code">CHE471</span> Chemical process principles I</h4>
+                <p>Material balances on single and multiple units, recycle, bypass and purge.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="course-group" aria-labelledby="cg-year2">
+            <h3 class="course-group-title" id="cg-year2">Year 2</h3>
+            <ul class="course-list">
+              <li data-keywords="cpp energy balance enthalpy reactive humidity psychrometric">
+                <h4><span class="code">CHE531</span> Chemical process principles II</h4>
+                <p>Energy balances, enthalpy calculations, reactive systems, humidity and psychrometric charts.</p>
+              </li>
+              <li data-keywords="heat exchanger lmtd ntu conduction convection radiation">
+                <h4><span class="code">CHE463</span> Heat transfer</h4>
+                <p>Conduction, convection, radiation, heat exchanger design with LMTD and NTU.</p>
+              </li>
+              <li data-keywords="mass transfer diffusion fick coefficients interphase">
+                <h4><span class="code">CHE545</span> Mass transfer</h4>
+                <p>Diffusion, mass transfer coefficients, interphase mass transfer.</p>
+              </li>
+              <li data-keywords="numerical methods root finding newton linear systems integration ode optimization matlab">
+                <h4><span class="code">CHE555</span> Numerical methods and optimization</h4>
+                <p>Root finding, linear systems, numerical integration, ODE solvers, optimization.</p>
+              </li>
+              <li data-keywords="sustainability environment management lca life cycle">
+                <h4><span class="code">EEE510</span> Sustainability management</h4>
+                <p>Sustainable development, environmental management systems, life cycle thinking.</p>
+              </li>
+              <li data-keywords="reaction kinetics cstr pfr batch reactor rate law mole balance">
+                <h4><span class="code">CHE502</span> Reaction engineering I</h4>
+                <p>Rate laws, mole balances, batch, CSTR and PFR design.</p>
+              </li>
+              <li data-keywords="transport phenomena shell balance momentum navier stokes">
+                <h4><span class="code">CHE522</span> Transport phenomena</h4>
+                <p>Shell balances and equations of change for momentum, heat and mass.</p>
+              </li>
+              <li data-keywords="separation distillation mccabe thiele absorption stripping extraction">
+                <h4><span class="code">CHE544</span> Separation processes</h4>
+                <p>Distillation with McCabe-Thiele, absorption, stripping, extraction.</p>
+              </li>
+              <li data-keywords="thermo thermodynamics vle phase equilibrium solution fugacity reaction equilibrium">
+                <h4><span class="code">CHE553</span> Chemical engineering thermodynamics</h4>
+                <p>Solution thermodynamics, vapor-liquid equilibrium, chemical reaction equilibrium.</p>
+              </li>
+              <li data-keywords="control laplace transfer function pid stability block diagram">
+                <h4><span class="code">CPE501</span> Chemical process control</h4>
+                <p>Laplace transforms, transfer functions, PID control, stability.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="course-group" aria-labelledby="cg-year3">
+            <h3 class="course-group-title" id="cg-year3">Year 3</h3>
+            <ul class="course-list">
+              <li data-keywords="reaction multiple reactions non-isothermal catalysis rtd residence time">
+                <h4><span class="code">CHE505</span> Reaction engineering II</h4>
+                <p>Multiple reactions, non-isothermal reactors, catalysis, residence time distribution.</p>
+              </li>
+              <li data-keywords="project management cpm pert gantt scheduling cost risk">
+                <h4><span class="code">CPE520</span> Project management</h4>
+                <p>Planning, scheduling with CPM and PERT, cost and risk control.</p>
+              </li>
+              <li data-keywords="plant design economics npv capex opex profitability sizing">
+                <h4><span class="code">CPE604</span> Plant design and economics</h4>
+                <p>Equipment sizing, capital and operating costs, NPV and profitability.</p>
+              </li>
+              <li data-keywords="process integration pinch heat exchanger network energy targeting">
+                <h4><span class="code">CPE614</span> Process integration</h4>
+                <p>Pinch analysis, heat exchanger networks, energy targeting.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="course-group" aria-labelledby="cg-final">
+            <h3 class="course-group-title" id="cg-final">Final year and electives</h3>
+            <ul class="course-list">
+              <li data-keywords="materials corrosion selection pressure vessel equipment design">
+                <h4><span class="code">CPE601</span> Materials and design of process equipment</h4>
+                <p>Material selection, corrosion, pressure vessel and equipment design.</p>
+              </li>
+              <li data-keywords="simulation aspen hysys flowsheet sensitivity">
+                <h4><span class="code">CPE605</span> Process simulation</h4>
+                <p>Building and solving process flowsheets in simulators such as Aspen.</p>
+              </li>
+              <li data-keywords="modelling modeling first principles dynamic model">
+                <h4><span class="code">CPE606</span> Process modelling</h4>
+                <p>First-principles models of process units and how to solve them.</p>
+              </li>
+              <li data-keywords="safety hazop risk fire explosion relief hazard">
+                <h4><span class="code">CPE615</span> Process safety</h4>
+                <p>Hazard identification, HAZOP, risk assessment, fires and explosions, relief systems.</p>
+              </li>
+              <li data-keywords="control instrumentation loop tuning practice">
+                <h4><span class="code">CPE622</span> Process control practices</h4>
+                <p>Instrumentation, control loop design and controller tuning in real plants.</p>
+              </li>
+              <li data-keywords="environment wastewater air pollution solid waste treatment">
+                <h4><span class="code">CPE649</span> Environmental engineering</h4>
+                <p>Wastewater treatment, air pollution control, solid waste management.</p>
+              </li>
+              <li data-keywords="food preservation thermal processing drying freezing shelf life">
+                <h4><span class="code">CBE658</span> Food preservation</h4>
+                <p>Thermal processing, drying, freezing and shelf life.</p>
+              </li>
+              <li data-keywords="downstream bioprocess bioseparation centrifugation chromatography crystallization">
+                <h4><span class="code">CBE660</span> Downstream processing</h4>
+                <p>Cell disruption, centrifugation, filtration, chromatography and crystallization of bioproducts.</p>
+              </li>
+              <li data-keywords="leadership ethics professional engineer code of ethics">
+                <h4><span class="code">CPE680</span> Leadership and professional ethics</h4>
+                <p>Engineering leadership, codes of ethics, professional responsibility.</p>
+              </li>
+              <li data-keywords="entrepreneurship business plan model startup">
+                <h4><span class="code">ENT600</span> Technology entrepreneurship</h4>
+                <p>Spotting opportunities, business models, writing a business plan.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <p class="empty-state" id="course-empty" hidden>
+          No course matches "<span id="course-empty-term"></span>". <a href="#register">Register</a> and name it in your message. We'll check if a tutor can cover it.
+        </p>
+      </div>
+    </section>
+
+    <!-- PACKAGES (main income: edit prices below) -->
+    <section class="section" id="packages">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <h2>Packages</h2>
+            <p class="section-lede">You pay per person, per 2-hour session. The bigger your group, the less each person pays.</p>
+          </div>
+          <p class="note note-aside" aria-hidden="true">bring friends, pay less</p>
+        </div>
+
+        <!-- MONETIZE: these prices are examples in Malaysian ringgit (RM). Change them to suit your market. -->
+        <table class="price-table">
+          <caption class="sr-only">Price per person for one 2-hour session</caption>
+          <thead>
+            <tr>
+              <th scope="col">Package</th>
+              <th scope="col">Group size</th>
+              <th scope="col" class="num">Per person, per session</th>
+              <th scope="col"><span class="sr-only">Book</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">One-to-one</th>
+              <td class="size">1 person</td>
+              <td class="price num">RM120<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="One-to-one">Book</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Duo</th>
+              <td class="size">2 people</td>
+              <td class="price num">RM90<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="Duo">Book</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Small group</th>
+              <td class="size">3 to 4 people</td>
+              <td class="price num">RM65<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="Small group">Book</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Group</th>
+              <td class="size">5 to 6 people</td>
+              <td class="price num">RM50<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="Group">Book</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Large group</th>
+              <td class="size">7 to 8 people</td>
+              <td class="price num">RM40<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="Large group">Book</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Full class</th>
+              <td class="size">9 to 10 people</td>
+              <td class="price num">RM35<span class="per"> per person</span></td>
+              <td class="book"><a class="btn btn-small" href="#register" data-package="Full class">Book</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="fine-print">Every package includes the notes and practice question sets for your course, plus free questions between sessions. You pay before each session.</p>
+      </div>
+    </section>
+
+    <!-- STUDY PACKS (second income stream: digital products) -->
+    <section class="section" id="packs">
+      <div class="wrap">
+        <h2>Study packs</h2>
+        <p class="section-lede">Revising on your own? Download the same notes our tutors teach from.</p>
+
+        <!-- MONETIZE: replace each href with your own Gumroad, Payhip or Lemon Squeezy product link. -->
+        <div class="packs">
+          <article class="pack">
+            <h3>Heat and mass transfer formula sheet</h3>
+            <p>Two pages with every correlation you need for the final, with units and when to use each one.</p>
+            <p class="pack-price">Free</p>
+            <a class="btn btn-ghost" href="https://yourname.gumroad.com/l/formula-sheet">Get the free sheet</a>
+          </article>
+          <article class="pack">
+            <h3>Thermodynamics past-paper pack</h3>
+            <p>40 exam-style questions with full worked solutions, sorted by topic.</p>
+            <p class="pack-price">RM39</p>
+            <a class="btn" href="https://yourname.gumroad.com/l/thermo-pack">Buy the pack</a>
+          </article>
+          <article class="pack">
+            <h3>Second-year module bundle</h3>
+            <p>Notes and practice sets for every second-year core course in one download.</p>
+            <p class="pack-price">RM119</p>
+            <a class="btn" href="https://yourname.gumroad.com/l/year-2-bundle">Buy the bundle</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <h2>What students say</h2>
+        <!-- IMPORTANT: these are sample reviews. Replace them with real student feedback (with permission) before you launch, then delete this note. -->
+        <p class="sample-note">Sample reviews. Replace with real ones before launch.</p>
+
+        <div class="reviews" aria-roledescription="carousel" aria-label="Student reviews">
+          <figure class="review" data-slide>
+            <blockquote>I finally understood McCabe-Thiele after one session. The tutor drew it step by step until it clicked.</blockquote>
+            <figcaption>Sample student, Year 2</figcaption>
+          </figure>
+          <figure class="review" data-slide hidden>
+            <blockquote>Sending a photo of a problem the night before the quiz and getting a hint back saved my reaction engineering grade.</blockquote>
+            <figcaption>Sample student, Year 3</figcaption>
+          </figure>
+          <figure class="review" data-slide hidden>
+            <blockquote>Our group of six booked every week before finals. Cheaper than I expected and a lot less stressful.</blockquote>
+            <figcaption>Sample student, Year 2</figcaption>
+          </figure>
+
+          <div class="review-controls">
+            <button class="btn btn-ghost btn-small" type="button" data-prev>Previous review</button>
+            <span class="review-count" id="review-count" aria-live="polite">1 of 3</span>
+            <button class="btn btn-ghost btn-small" type="button" data-next>Next review</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section class="section register" id="register">
+      <div class="wrap register-grid">
+        <div class="register-copy">
+          <h2>Register your group</h2>
+          <p>Tell us who's coming and what you're studying. We'll reply on WhatsApp within one day with available times and how to pay.</p>
+          <p>Prefer to chat first? <a href="#" data-whatsapp>Message us on WhatsApp</a>.</p>
+        </div>
+
+        <form class="form" id="register-form">
+          <input type="hidden" name="_subject" value="New SteadyState registration">
+          <!-- Spam trap: real people never fill this in. -->
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">WhatsApp number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="university">University</label>
+            <input id="university" name="university" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="year">Year of study</label>
+            <select id="year" name="year" required>
+              <option value="">Choose your year</option>
+              <option>Year 1</option>
+              <option>Year 2</option>
+              <option>Year 3</option>
+              <option>Year 4</option>
+              <option>Postgraduate</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="package">Package</label>
+            <select id="package" name="package" required>
+              <option value="">Choose a package</option>
+              <option>One-to-one</option>
+              <option>Duo</option>
+              <option>Small group</option>
+              <option>Group</option>
+              <option>Large group</option>
+              <option>Full class</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="course">Course</label>
+            <input id="course" name="course" type="text" list="course-options" placeholder="For example, CHE463 Heat transfer" required>
+            <!-- Filled from the course list by script.js -->
+            <datalist id="course-options"></datalist>
+          </div>
+          <div class="field field-wide">
+            <label for="message">Anything else? <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="4" placeholder="Group members, preferred days, topics you're stuck on"></textarea>
+          </div>
+
+          <div class="form-actions field-wide">
+            <button class="btn" type="submit">Send registration</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand">SteadyState</p>
+        <p>Private tutoring for chemical engineering students.</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-list">
+          <!-- Replace with your real contact details. -->
+          <li><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></li>
+          <li><a href="#" data-whatsapp>WhatsApp</a></li>
+          <li><a href="https://instagram.com/yourhandle">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-heading">Site</h2>
+        <ul class="footer-list">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="tutor.html">Become a tutor</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; <span id="year">2026</span> SteadyState</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
